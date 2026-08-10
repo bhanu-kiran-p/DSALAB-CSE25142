@@ -4,6 +4,7 @@ def main():
     print("enter number of elements")
     n = int(input(">"))
     arr = []
+    print("Enter the elements:")
     for _ in range(n):
         arr.append(int(input(">")))
     print("Enter the key value")
