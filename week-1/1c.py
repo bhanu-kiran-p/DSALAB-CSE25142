@@ -5,7 +5,6 @@ def main():
     result2 = search(arr, 42, 0)
     print(result2)
 
-
 def search(arr, id, start):
    if start == len(arr):
        print("id not found :", end="")

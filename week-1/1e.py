@@ -1,5 +1,5 @@
 def main():
-    print_fib(n)
+    print_fib(6)
 
 def fib(n):
     if n == 1:
@@ -8,7 +8,7 @@ def fib(n):
         return 1
     else:
         return fib(n-1) + fib(n-2)
-
+    
 def print_fib(n):     
     for i in range(1, 9):
         print(fib(i))
