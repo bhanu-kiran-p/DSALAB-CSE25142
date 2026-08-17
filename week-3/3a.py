@@ -13,8 +13,8 @@ def bubble_sort(arr):
     n = len(arr)
     for i in range(len(arr)):
         for j in range(n-i-1):
-            if arr[i] < arr[j]:
-                arr[i], arr[j] = arr[j], arr[i]
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
                 
 if __name__ == '__main__':
     main()
