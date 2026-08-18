@@ -1,0 +1,22 @@
+week - 4
+
+RecursionError: maximum recursion depth exceeded
+error rectified: base case in merge_sort() len(arr) <1 to len(arr) <= 1
+
+PS C:\Users\Lab\Documents\cse25142\dsa-lab\week-4> python merge_sort.py
+[2, 3, 7, 7, 8, 3, 7, 7, 8, 7, 7, 8]
+error rectified: kept the extend in the while loop instead of out of while loop
+
+
+quick sort:
+
+PS C:\Users\Lab\Documents\cse25142\dsa-lab\week-4> python quick_sort.py
+Traceback (most recent call last):
+  File "C:\Users\Lab\Documents\cse25142\dsa-lab\week-4\quick_sort.py", line 24, in <module>
+    main()
+  File "C:\Users\Lab\Documents\cse25142\dsa-lab\week-4\quick_sort.py", line 5, in main
+    quick_sort(arr)
+TypeError: quick_sort() missing 2 required positional arguments: 'low' and 'high'
+PS C:\Users\Lab\Documents\cse25142\dsa-lab\week-4> 
+
+rectification: added the two parameters to the function
