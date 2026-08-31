@@ -9,6 +9,8 @@ def main():
     linkedList.display()
     print("Reverse:")
     linkedList.display_rev()
+    linkedList.reverse()
+    linkedList.display()
 
 
 class Node:
@@ -37,8 +39,17 @@ class LinkedList:
             print(temp.data, end="<->")
             temp = temp.next
         print("None")
-    def display_rev(self):
-        temp = 
 
-if __name__ == '__main__':
+    def display_rev(self):
+        arr = []
+        temp = self.head
+        while temp:
+            arr.append(temp)
+            temp = temp.next
+        for i in range(len(arr) - 1, -1, -1):
+            print(arr[i].data, end="<->")
+        print("None")
+
+
+if __name__ == "__main__":
     main()
