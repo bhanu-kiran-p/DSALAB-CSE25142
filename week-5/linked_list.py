@@ -10,14 +10,27 @@ def main():
             print("linked list successfully created")
         elif option == "2":
             my_LinkedList.insert_begin(int(input("Enter the data: ")))
+            print("element is inserted")
         elif option == "3":
             my_LinkedList.insert_end(int(input("Enter the data: ")))
+            print("element inserted")
         elif option == "4":
-            my_LinkedList.insert_position(int(input("Enter the data: ")))
+            my_LinkedList.insert_position(
+                int(input("Enter the data: ")), int(input("Enter the position: "))
+            )
+            print("element inserted")
         elif option == "5":
             my_LinkedList.delete_begin()
+            print("first node deleted")
         elif option == "6":
             my_LinkedList.delete_end()
+            print("last node deleted")
+        elif option == "7":
+            my_LinkedList.delete_position(int(input("Enter position: ")))
+            print("node at position is deleted")
+        elif option == "8":
+            count = my_LinkedList.size()
+            print("the size of linked list is {}".format(count))
         elif option == "9":
             my_LinkedList.display()
         elif option == "10":
@@ -93,6 +106,26 @@ class LinkedList:
         while temp.next.next:
             temp = temp.next
         temp.next = None
+
+    def delete_position(self, pos):
+        if self.head is None:
+            print("Empty linked list")
+            return
+        if pos < 0 or pos > self.size():
+            print("position do not exists")
+            return
+        temp = self.head
+        count = 0
+        while count < pos - 1:
+            temp = temp.next
+            count += 1
+        temp.next = temp.next.next
+
+        temp = self.head
+        count = 0
+        while count < pos - 1:
+            temp = temp.next
+            count += 1
 
 
 class Node:
