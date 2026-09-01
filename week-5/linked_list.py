@@ -16,8 +16,7 @@ def main():
             print("element inserted")
         elif option == "4":
             my_LinkedList.insert_position(
-                int(input("Enter the data: ")), int(input("Enter the position: "))
-            )
+                int(input("Enter the data: ")), int(input("Enter the position: ")))
             print("element inserted")
         elif option == "5":
             my_LinkedList.delete_begin()
