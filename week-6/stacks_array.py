@@ -1,3 +1,4 @@
+# cse25142 Bhanu Kiran
 class Stack:
     def __init__(self, size):
         self.size = size
@@ -37,6 +38,7 @@ class Stack:
         print("\n")
 
 def main():
+    print("CSE25142 Bhanu Kiran\n")
     stack = Stack(5)
     stack.push(3)
     stack.display()

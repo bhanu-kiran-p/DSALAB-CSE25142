@@ -1,4 +1,6 @@
+# CSE25142 Bhanu Kiran
 def main():
+    print("CSE25142 Bhanu Kiran\n")
     while True:
         print(
             "1.create\n2.insert at beginning\n3.insert at end\n4.insert at certain position\n5.delete first node\n6.delete last node\n7.delete specific node\n"
@@ -16,7 +18,8 @@ def main():
             print("element inserted")
         elif option == "4":
             my_LinkedList.insert_position(
-                int(input("Enter the data: ")), int(input("Enter the position: ")))
+                int(input("Enter the data: ")), int(input("Enter the position: "))
+            )
             print("element inserted")
         elif option == "5":
             my_LinkedList.delete_begin()
