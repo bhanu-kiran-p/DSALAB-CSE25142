@@ -45,4 +45,4 @@ class CLL:
             return
         if self.head == self.tail:
             self.head = self.tial= 
-            
+            n
