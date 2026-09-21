@@ -41,4 +41,8 @@ class Stack:
             print(f"{temp.data}", end='->')
             temp = temp.next
         print("None")
-    
+
+def main():
+    stack = Stack()
+if __name__ =='__main__':
+    main()
