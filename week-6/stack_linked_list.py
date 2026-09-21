@@ -19,7 +19,7 @@ class Stack:
     def pop(self):
         # checking for the under flow condition
         if self.top is None:
-            print("stack is empty")
+            print("stack under flow")
             return
         #need to give the self.top to  the next node
         item = self.top.data
@@ -44,6 +44,21 @@ class Stack:
         print("None")
 
 def main():
+    print("cse25142 Bhanu Kiran\n")
     stack = Stack()
+    stack.push(10)
+    stack.push(20)
+    stack.push(30)
+    stack.push(40)
+    stack.push(50)
+    stack.display()
+    stack.pop()
+    stack.pop()
+    stack.display()
+    stack.peek()
+    stack.pop()
+    stack.pop()
+    stack.pop()
+    stack.pop()
 if __name__ =='__main__':
     main()

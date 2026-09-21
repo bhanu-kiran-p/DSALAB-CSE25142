@@ -38,13 +38,22 @@ class Stack:
         print("\n")
 
 def main():
-    print("CSE25142 Bhanu Kiran\n")
+    print("cse25142 Bhanu Kiran\n")
     stack = Stack(5)
-    stack.push(3)
+    stack.push(10)
+    stack.push(20)
+    stack.push(30)
+    stack.push(40)
+    stack.push(50)
     stack.display()
+    stack.pop()
     stack.pop()
     stack.display()
     stack.peek()
+    stack.pop()
+    stack.pop()
+    stack.pop()
+    stack.pop()
 
 if __name__ == '__main__':
     main()
