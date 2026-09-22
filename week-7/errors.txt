@@ -1,0 +1,14 @@
+ File "C:\Users\Lab\Documents\cse25142\dsa-lab\week-7\circular_queue.py", line 65, in main
+    queue.peek()
+  File "C:\Users\Lab\Documents\cse25142\dsa-lab\week-7\circular_queue.py", line 38, in peek
+    item = self.queue[self.font]
+  AttributeError: 'CircularQueue' object has no attribute 'font'. Did you mean: 'front'?
+
+
+
+File "C:\Users\Lab\Documents\cse25142\dsa-lab\week-7\circular_queue.py", line 63, in main
+    queue.dequeue()
+  File "C:\Users\Lab\Documents\cse25142\dsa-lab\week-7\circular_queue.py", line 27, in dequeue
+    item = self.queue[self.front]
+           ~~~~~~~~~~^^^^^^^^^^^^
+IndexError: list index out of range
