@@ -12,3 +12,33 @@ File "C:\Users\Lab\Documents\cse25142\dsa-lab\week-7\circular_queue.py", line 63
     item = self.queue[self.front]
            ~~~~~~~~~~^^^^^^^^^^^^
 IndexError: list index out of range
+
+
+
+circular queue using linked list
+
+Error:
+ile "C:\Users\Lab\Documents\cse25142\dsa-lab\week-7\circular_queue_ll.py", line 16, in enqueue
+    self.rear.next = node
+    ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'next'
+
+Soln:
+replaced is None in place of if self.rear == -1
+
+Error:
+File "C:\Users\Lab\Documents\cse25142\dsa-lab\week-7\circular_queue_ll.py", line 13, in enqueue
+    self.rear.next = self.next
+                     ^^^^^^^^^
+AttributeError: 'CircularQueue' object has no attribute 'next'
+PS C:\Users\Lab\Documents\cse25142\dsa-lab\week-7> 
+
+Soln:
+replaced the self.rear.next = self.next with self.rear.next = self.front
+
+
+Error:
+the dequeue is not working.
+
+Soln:
+forgot to mention the self.front = self.front.next in dequeue
