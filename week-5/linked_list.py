@@ -72,21 +72,19 @@ class LinkedList:
             count += 1
         return count
 
-    def insert_position(self, data, pos):
-        if pos - 1 == 0:
-            self.insert_begin(data)
+    def insert_index(self, index, data):
+        if index < 0 or index > self.count():
+            print("invalid index")
             return
-        if pos < 1 or pos > self.count():
-            print("position not available")
+        if index == 0:
+            self.insert_begin()
             return
         temp = self.head
         node = Node(data)
-        count = 0
-        while count < pos - 1:
+        for i in range(index-1):
             temp = temp.next
-        node.next = temp.next.next
+        node.next = temp.next
         temp.next = node
-
     def display(self):
         temp = self.head
         while temp:
